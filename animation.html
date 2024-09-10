@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    img:hover{
+         animation-name: roll-right;
+        animation-duration: 2s;
+        animation-delay:1s;
+        animation-direction: alternate;
+        animation-timing-function:linear ;
+        animation-iteration-count: 4; 
+
+
+    }
+   
+    
+    @keyframes roll-right{
+        from{
+            transform: translateX(200px)rotate(0deg);
+        }
+        to{
+            transform: translateX(500px)rotate(360deg);
+        }
+    }
+       
+    .img1:hover{
+         animation-name: roll-left;
+        animation-duration: 2s;
+        animation-delay: 1s;
+        animation-direction: alternate;
+        animation-timing-function:linear ;
+        animation-iteration-count: 4; 
+        
+
+    }
+     
+    
+
+    @keyframes roll-left {
+        from{
+            
+            transform: translateX(200px)rotate(0deg);
+        }
+         
+        
+        to{
+           
+            transform:translateX(-400px)rotate(-360deg);
+        }
+    }
+    .img2:hover{
+        animation-name: move-vertical;
+        animation-duration: 2s;
+        animation-delay: 1s;
+        animation-iteration-count: 4;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+       
+    }
+    @keyframes move-vertical {
+        from{
+            transform:translateY(200px)rotate(0deg);
+        }
+        to{
+            transform: translateY(500px) rotate(360deg);
+        }
+        
+    }
+
+    
+        
+        
+        
+    
+</style>
+<body>
+    
+        <table border="1"cellspacing="0"cellpadding="30px"style="width:1500px">
+            <tbody>
+                <tr align="center" cellpadding="50px">
+                    <td>image1</td>
+   <td> <img src="https://w0.peakpx.com/wallpaper/584/181/HD-wallpaper-prabhas-ki-smile-prabhas-ki-smile-thumbnail.jpg"width="200px"height="200px"></td>
+                </tr>
+                <tr align="center"width="600px">
+                    <td>image2</td>
+                    
+    <td><img class="img1" src="https://w0.peakpx.com/wallpaper/916/917/HD-wallpaper-jr-ntr-smile-ntr.jpg"width="200px"height="200px"></td>
+                    
+                </tr>
+                <tr align="center">
+                    <td>image3</td>
+   <td> <img class="img2"src="https://www.suryanfm.in/wp-content/uploads/2021/11/5-26.jpg"width="200px"height="200px"></td>
+                </tr>
+            </tbody>   
+</table>
+</body>
+</html>
